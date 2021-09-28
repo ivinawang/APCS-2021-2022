@@ -1,5 +1,5 @@
 I was able to complete the exercises; but was
-	- confused on how the rounding error works
-	- not sure on the literals/constants and the formatting output (3.5 + 3.6); 
+	-confused on how the rounding error works
+	-not sure on the literals/constants and the formatting output (3.5 + 3.6); 
 idk what the "magic numbers are, and when to declare a variable a final
 also, im confused on the format specifiers, like the decial integer is \%d, and there is \%08d, etc.

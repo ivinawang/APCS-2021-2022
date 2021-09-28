@@ -1,1 +1,2 @@
-I understood a majority of the chapter, up until it got to the recursive methods. But for the most part, I'm ok at working with conditionals.
+I understood a majority of the chapter, up until it got to the recursive methods. 
+But for the most part, I'm ok at working with conditionals.
