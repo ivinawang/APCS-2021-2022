@@ -18,9 +18,9 @@ public class Greet {
 	public static void main(String[] args){
 		greet("Foo");
 		greet("Moo");
-		greet("Ooo")
+		greet("Ooo");
 	}
 	public static void greet(String s){
-		System.out.println("Why, hello there, " + s + ". How do you do?")
+		System.out.println("Why, hello there, " + s + ". How do you do?");
 	}
 }
