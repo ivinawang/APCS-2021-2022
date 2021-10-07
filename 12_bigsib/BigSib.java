@@ -6,7 +6,7 @@ HW12 -- On Elder Individuality and the Elimination of Radio Fuzz
 */
 
 public class BigSib{
-  Private String helloMsg;
+  private String helloMsg;
 
   public void setHelloMsg(String hello){
     helloMsg = hello;
