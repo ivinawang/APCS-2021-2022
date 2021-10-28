@@ -48,10 +48,10 @@ public class Stats {
 			return a;
 		}
 		else if (a > b){
-			return gcd((a-b), b);
+			return gcdER((a-b), b);
 		}
 		else {
-			return gcd(a, (b-a));
+			return gcdER(a, (b-a));
 		}
 	}
 
