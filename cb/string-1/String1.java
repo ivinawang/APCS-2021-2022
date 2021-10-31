@@ -3,7 +3,7 @@ Ivina Wang
 APCS
 HW28 -- PPMP
 2021-10-31
-time spent: 2 hour
+time spent: 2 hours
 */
 
 public class String1{
