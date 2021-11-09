@@ -1,6 +1,7 @@
 To-do list:
-	Debug original pig.java from library
-	Capitalization/Punctuation
+	x Debug original pig.java from library
+	x Capitalization/Punctuation
 		^^ Add methods from the newly posted pig.java skeleton
-	Sentences (including hyphens)
+	** Sentences (including hyphens)
+	** Add scanners + words list
 	

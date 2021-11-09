@@ -39,6 +39,7 @@ public class Pig {
 		private static final String VOWELS = "aeiouy";
     private static final String CAPS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     private static final String PUNCS = ".,:;!?";
+		private static final String NUMBERS = "1234567890";
 
 
 		/**
@@ -223,16 +224,42 @@ public class Pig {
   }
 
 
-		public static void main( String[] args ) {
+			public static boolean isNum( String num ) {
+					return NUMBERS.indexOf( num ) != -1;
+				}
 
-    		for( String word : args ) {
-      		System.out.println( "allVowels \t" + allVowels(word) );
-      		System.out.println( "firstVowels \t" + firstVowel(word) );
-      		System.out.println( "countVowels \t" + countVowels(word) );
-      		System.out.println( "engToPig \t" + engToPig(word) );
-      		System.out.println( "---------------------" );
-    		}
 
-  	}//end main()
+			public static boolean hasNum( String num ) {
+					boolean nums = false;
+					for (int i=0; i<num.length(); i++){
+							if(NUMBERS.indexOf(num.substring(i,i+1)) != -1){
+							nums = true;
+							}
+					}
+					return nums;
+			}
+
+			public static void pigSentence( String w ){
+					int startLetter = 0
+					for (int i = 0; i<w.length(); i++){
+							if (w.substring(i,i+1) == " "){
+									engToPig(w.substring(startLetter,i+1));
+									startLetter = i + 1
+							}
+					}
+
+			}
+
+			public static void main( String[] args ) {
+
+    			for( String word : args ) {
+      				System.out.println( "allVowels \t" + allVowels(word) );
+      				System.out.println( "firstVowels \t" + firstVowel(word) );
+      				System.out.println( "countVowels \t" + countVowels(word) );
+      				System.out.println( "engToPig \t" + engToPig(word) );
+      				System.out.println( "---------------------" );
+    			}
+
+  		}//end main()
 
 }//end class Pig
