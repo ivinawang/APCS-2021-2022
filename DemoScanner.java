@@ -13,7 +13,7 @@
    ...
    5. Reconcile predictions with observations.
    ( CTRL-C to exit )
-**/
+*/
 
 import java.util.Scanner;  //Scanner is not part of java's std lib
 

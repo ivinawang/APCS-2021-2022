@@ -3,5 +3,5 @@ To-do list:
 	x Capitalization/Punctuation
 		^^ Add methods from the newly posted pig.java skeleton
 	** Sentences (including hyphens)
-	** Add scanners + words list
+	** Add scanners + words lists
 	

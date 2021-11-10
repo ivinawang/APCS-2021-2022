@@ -3,39 +3,23 @@ Noobies - Lawrence Joa(Steve, John), Ivina Wang (Sealie), Jacc Chen (Large)
 APCS
 L00: Etterbay Odingcay Oughthray Ollaborationcay
 2021-11-09
-time spent: 3.0 hr
+time spent: 1.5 hr
 
 DISCO:
-* DemoScanner.java has a functionality similar to $ cat
-* To process a plaintext file using DemoScanner(after javac), you type java DemoScanner < <locationOfFile>/words.in
-	(from piazza)
-	There are two redirector commands, < and >- < redirects the terminal to look at the standard input stream of the file
-  																						> redirects the terminal to look at the standard output strema of the file
-* For the DemoScanner, when you put in an odd number of input you get an error, and when you
-	add in an even number of inputs you do not get an error
+* When we transalted yay, the outcome was yayway(for the old Pig.java)- bc it counted the y as a vowel,
+but when y is the first letter in a word, it is usually not a vowel (now it is ayyay!)
+* Punctuation string can not use indexOf, we must write a for loop.
 
 QCC:
-* How do you translate a word with an apostrophe? (the code did not run when we tried translating "you're" in terminal)
-* What is !!, and what does it do?
-	We tried running java Pig hi!!, and it doesn't traslate, instead it printed out the piglatin version of the previous commands in terminal
-
-HOW WE UTILIZED SCANNER DEMO (v2):
-* We copied the DemoScanner file and tested it with the words.in file
-* We pasted the DemoScanner in the main method, and edited it to translate the inputs to piglatin
-
-WHAT CAUSES THE RUNTIME ERROR IN THE SCANNER DEMO:
-* Scanner is trying to take in a non-existent input from the word.in file;
-	the scanner reads two inputs at a time
+* Do we have to create another final String to add numbers to the translator?
+* How do we translate a word that has a ' in between it- like "you're"?
 
 NEW IN v1:
 * Fufilled all of the general rules
 * Can handle multiple consonants at the beginnning of the word
 * Can handle capitalization (to a certain extent; like the beginning of a word, or
-	if it is in the middle of the sentence, but it cannot do both)
+if it is in the middle of the sentence, but it cannot do both)
 * Can handle punctuation and hyphens
-
-NEW IN v2:
-* Added scanner
 
 class Pig
 a Pig Latin translator
@@ -56,7 +40,6 @@ a Pig Latin translator
      NEVER STRAY TOO FAR FROM COMPILABILITY/RUNNABILITY!
 */
 
-import java.util.Scanner;
 
 public class Pig {
 
@@ -280,23 +263,15 @@ public class Pig {
 
 			public static void main( String[] args ) {
 
-    			/*for( String word : args ) {
-      				System.out.println( "allVowels \t" + allVowels(word) );
+    			for( String word : args ) {
+      				/*System.out.println( "allVowels \t" + allVowels(word) );
       				System.out.println( "firstVowels \t" + firstVowel(word) );
       				System.out.println( "countVowels \t" + countVowels(word) );
       				System.out.println( "engToPig \t" + engToPig(word) );
-      				System.out.println( "---------------------" );
+      				System.out.println( "---------------------" );*/
             	System.out.print( pigSentence(word) + " ");
     			}
-  				*/
-        	//instantiate a Scanner with STDIN as its bytestream
-        		Scanner sc = new Scanner(System.in);
-        		while(sc.hasNext()){
-          			String s = sc.nextLine();
-          			System.out.print( s + " --> " );
-          			System.out.println( pigSentence(s) );
 
-    				}
   		}//end main()
 
 }//end class Pig
