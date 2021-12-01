@@ -1,0 +1,62 @@
+/*
+Ivina Wang (Sealie)
+APCS
+HW36 -- All Quacked Up
+2021-11-19
+time spent: 0.6 hr
+*/
+
+- compile-time errors: something wrong in syntax (ex. a missing semicolon)
+- run-time error: something that goes wrong when running the program (ex. StackOveflowError = an infinite recursion)
+- logic error: when the program is doing something wrong (ex. when the program computes something in the wrong order)
+
+D.1 Compile-Time Errors
+- use error messages from the compiler as a guideline to get rid of the errors
+- "I’m getting a weird compiler message, and it won’t go away" -> looka t common syntax errors
+- "I can’t get my program to compile no matter what I do" -> check the development environment/the program you are editing is the program the compiler is compiling
+	- might happen if you have multiple copies of the same program
+	- if it doesn't work still -> debug by bisection:
+		- make a copy of the file (Bob.java -> Bob.java.old)
+		- delete half of the code and try compiling again; if it doesn't compile, the problem is in that half of code/if it does compile, the problem in in the other half of the code
+	- then bring back parts of the code incrementally
+- "I did what the compiler told me to do, but it still doesn’t work" -> sometimes the compiler's error messages (solutions) can be wrong- it only tells you that something is wrong
+
+D.2 Run-Time Errors
+- "My program hangs" -> it is caught in an infinite loop
+- "When I run the program, I get an exception"
+	- NullPointerException
+	- ArrayIndexOutOfBoundsException
+	- StackOverflowError
+	- FileNotFoundException
+	- ArithmeticException (dividng by zero)
+- "I added so many print statements I get inundated with output" 
+	- scale down the problem/program
+	- use minimal test cases
+	- reorganize the program
+
+D.3 Logic Errors
+- "My program doesn't work"
+	- harder to find because the compiler/interpreter doesnt provide the information on the error (only you, the programer, knows what the program is supposed to do)
+		- look at the flow of execution
+	- try breaking the code into componenets and test them independently\
+	- common logic errors:
+		- interger division always rounds towards zero
+		- fractions -> use double
+		- floating-point numbers are not always accurate
+		- == (equality operator) and .equals are not the same
+		- Inheritance can lead to subtle logic errors
+- "I’ve got a big, hairy expression and it doesn’t do what I expect"
+	- complex expressions are more likely to have errors in them- you can break them into a serires of assignments to temporary variables
+	- it makes it easier to debug
+- "I’m really, really stuck and I need help"
+	- get away from the computer for a few min; get up/go for a walk to cool down
+	- when you are calm again, think of the program
+- "No, I really need help"
+	- Rubber duck debugging:
+	- put the rubber duck in from of you and ask it questions
+	- explain the problem to the rubber duck
+	- discover the solution
+	- thank the rubber duck
+- "I found the bug!" (after fixing the bug...)
+	- think about the bug made/how to avoid it in the future
+	- think about what you could've done to find the bug faster, etc.
