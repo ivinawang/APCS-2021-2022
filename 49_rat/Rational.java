@@ -1,25 +1,22 @@
 /**
 TNPG: Frogs (Ivina Wang, Ruby Friedman, and Samantha Hua)
 APCS
-HW42-- Be More Rational
-2021-12-6
-time spent: 1.5 hrs
+HW49-- Rational Standards Compliance
+2021-12-22
+time spent: 1.0 hr
 
 DISCO:
- * gcd stands for greatest common DIVISOR not greatest common denominator
- * Helper functions increase clarity and simplicity.
- * When in doubt, make instance variables private.
- * To test the compareTo(Rational a) method, you can compare a Rational to itself.
- * using this.numerator or this.denominator brings clarity to code
+ * How to use instanceof and implement a class into compliance with an interface.
+ * You can type cast into a specific type of Object (ie Rational)
+ * Driver files are helpful for creating test cases and then letting the error messages guide you.
 
 QCC:
- * What is the significance of having a static and non-static gcd method?
- * What other methods can you add to Rational.java for more functionality when playing with rationals?
- * How can Rational.java be used from another class?
+ * How can we implement this into other projects, when would we want to put an interface into compliance with>
+ * How many test cases is sufficent to prove that class Rational is in compliance with the Comparable interfa>
 
 **/
 
-public class Rational{
+public class Rational implements Comparable {
 	private int numerator;
 	private int denominator;
 
@@ -116,20 +113,42 @@ public class Rational{
 		denominator = this.denominator / gcd();
 	}
 
-	public int compareTo(Rational a) {
-		int den = gcDENOMINATOR(this.denominator, a.denominator);
-                int mult0 = den/this.denominator;
-                int mult1 = den/a.denominator;
-		int num0 = (mult0 * this.numerator);
-		int num1 = (mult1 * a.numerator);
-		if (num0 == num1) {
-			return 0;
-		}
-		else if (num0 > num1) {
-			return -1;
+	public int compareTo(Object a) {
+		if (a instanceof Rational) {
+			Rational b  = (Rational) a;
+			int den = gcDENOMINATOR(this.denominator, b.denominator);
+        	        int mult0 = den/this.denominator;
+               		 int mult1 = den/b.denominator;
+			int num0 = (mult0 * this.numerator);
+			int num1 = (mult1 * b.numerator);
+			if (num0 == num1) {
+				return 0;
+			}
+			else if (num0 > num1) {
+				return -1;
+			}
+			else {
+				return 1;
+			}
 		}
 		else {
-			return 1;
+			System.out.println("Ayo that's not a Rational!");
+			return -1;
+		}
+	}
+
+	public boolean equals(Object bob) {
+		if (bob instanceof Rational) {
+			if (compareTo((Rational) bob)== 0) {
+				return true;
+			}
+			else {
+				return false;
+			}
+		}
+		else {
+			System.out.println("Ayo that's not a Rational!");
+			return false;
 		}
 	}
 
