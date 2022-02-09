@@ -10,9 +10,12 @@ DISCO:
  first place.
 * To make the algorithm simpler, it is best to set the base case to one card- because we know that
  the card will always be sorted
+** The method sort in MergeSort calls on itself recursively, splitting the arrays in half until they only have 1 element each, and then merging them
 
 QCC:
 * What is an efficient way to keep track of who has already received a card/who hasn't?
+** When we merged arrays 4 and 6, we got [1,2,3,4,9,42,17,63,0,512,23,]. It merged the two arrays, however
+  the result was unsorted because 6 is unsorted.
 
 THINKER FIRMWARE:
 1. Wait until you receive cards from another person.
