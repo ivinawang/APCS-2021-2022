@@ -2,7 +2,7 @@ Team Turtle (Marcus Wu and Ivina Wang)
 APCS pd7
 HW#61 -- Instructions so Simple...
 2022-02-08
-time spent: 1 hrs
+time spent: 1 hr
 
 DISCO:
 * Although we seemed to be improving towards the end, the major problem was that people were
@@ -10,12 +10,15 @@ DISCO:
  first place.
 * To make the algorithm simpler, it is best to set the base case to one card- because we know that
  the card will always be sorted
-** The method sort in MergeSort calls on itself recursively, splitting the arrays in half until they only have 1 element each, and then merging them
+** The method sort in MergeSort calls on itself recursively, splitting the arrays in half until they
+ only have 1 element each, and then merging them
+** int arrays are much more difficult to manage than ArrayLists, since you can't just add or remove
+ elements, and you need to keep track of the indices with variables that you increment (checkA, checkB).
 
 QCC:
 * What is an efficient way to keep track of who has already received a card/who hasn't?
 ** When we merged arrays 4 and 6, we got [1,2,3,4,9,42,17,63,0,512,23,]. It merged the two arrays "successfully," however
-  the result was unsorted because 6 is unsorted (the precondition says that the arrays must be already sorted).
+ the result was unsorted because 6 is unsorted (the precondition says that the arrays must be already sorted).
 
 THINKER FIRMWARE:
 1. Wait until you receive cards from another person.

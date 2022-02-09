@@ -3,7 +3,7 @@ Team Turtle (Marcus Wu and Ivina Wang)
 APCS pd7
 HW#61 -- Instructions so Simple...
 2022-02-08
-time spent: 1 hrs
+time spent: 1 hr
 */
 /***
   class MergeSort
