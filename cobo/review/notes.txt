@@ -1,0 +1,24 @@
+Ivina Wang
+APCS pd7
+HW#63 -- Read/Review/Expand
+2022-02-11
+time spent: 1 hr
+
+Activity 1~
+1  a. sentimentVal(String word)
+   b. Yes, it requires a String parameter. If you use a different type, you will get an error
+   c. It returns a Double
+2  happily = 2.32
+   terrible = -3.38
+   cold = -0.04
+   amazing = 1.26
+   why = 0.34
+   questionable = -0.56
+3  a. double num = sentimentVal("warm");
+      this works- sentimentVal returns a double
+   b. String world = sentimentVal(.5);
+      this will not work- sentimentVal cannot take a double input
+   c. double x = sentimentVal("good", "bad");
+      this will not work- sentimentValdoes not take in two Strings at once
+
+Activity 2~
