@@ -146,8 +146,8 @@ public class QueenBoard
   /***
    * Prints out the arrays that make up the board, with 1's, 0's, and negative numbers indicating queens,
      possible positions of queens, and positions where queens cannot be placed, respectively.
-   * precondition:
-   * postcondition:
+   * precondition: A board has been created with size > 0
+   * postcondition: The array of ints has been printed
    */
   public String  toString()
   {
