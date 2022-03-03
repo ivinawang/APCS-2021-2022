@@ -32,5 +32,5 @@ q3: Thoughts on optimization?
 ALGO for finding way out of a maze
 * Continuously check if there is a wall (" ") to the left of the hero.
 * If so, walk forward. If not, turn left and walk forward one space.
-* If the hero cannot walk forward because there is a wall in the way, turn left. If the hero has been in the same position more than once (?) turn right.
+* If the hero cannot walk forward because there is a wall in the way, turn left. If the hero has been in the same position more than once turn right.
 * This algorithm does not work if the maze is the walls are not completely connected. (i.e. a standalone island)
