@@ -23,9 +23,9 @@
  *  Repeat until EXIT is reached.
  *
  * DISCO
- *
+ * This was pretty similar to the Knight's tour problem, and so we were able to use pretty much the same implementation.
  * QCC
- *
+ * How can we make sure the character reaches the exit? That is, what happens if the character starts in a spot that doesn't connect to the exit?
  ***/
 
 //enable file I/O
