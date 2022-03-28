@@ -32,8 +32,6 @@ time spent: 1 hr
 **/
 
 
-
-
 import java.util.List;
 import java.util.Iterator;
 import java.util.ArrayList;
