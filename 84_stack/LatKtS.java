@@ -6,8 +6,8 @@ HW84-- Stack: What Is It Good For?
 time spent: 2 hr
 
 DISCO:
-* we could create a peek() in Latkes.java to help us with allMatched
-* the peek() method returns the object at the top of the stack without popping it.
+* We could create a peek() in Latkes.java to help us with allMatched
+* The peek() method returns the object at the top of the stack without popping it.
 QCC:
 * Why is there nothing in our new stack?
 */
