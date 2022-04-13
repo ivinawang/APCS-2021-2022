@@ -9,7 +9,7 @@ HW90-- Swabbing the Deque
 time spent: 1.0 hrs
 
 
-####PLAN:
+### PLAN:
 * addFirst(), addLast()
 * peekFirst(), peekLast()
 * removeFirst(), removeLast()
