@@ -11,7 +11,6 @@ import java.util.ArrayList;
 
 public class ALQueue<T> implements Queue<T> {
   private ArrayList<T> array;
-  private int _size;
 
   public ALQueue(){
     array = new ArrayList<T>();
@@ -20,22 +19,13 @@ public class ALQueue<T> implements Queue<T> {
   public T dequeue() {
     if (!isEmpty()){
       array.remove(0);
-      _size--;
     }
     return null;
-  } //O(1)
+  } //O(n)
 
   public void enqueue( T x ){
-    if (array.size()>= _size) {
-      ArrayList<T> temp = new ArrayList<T>(array.size()*2);
-      for (T items : array){
-        temp.add(items);
-      }
-      array = temp;
-    }
     array.add(x);
-    _size++;
-  } //O(1) / O(n)
+  } //O(1)
 
   public boolean isEmpty(){
     return array.isEmpty();
