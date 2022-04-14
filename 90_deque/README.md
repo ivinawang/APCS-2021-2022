@@ -19,12 +19,12 @@ time spent: 1.0 hrs
 ### EXTRAS METHODS:
 * contains()
 * iterator(), descendingIterator()
-* removeFirstOccurrence(), removeLastOccurrence()
 
 ### OTHER METHODS:
 * offerFirst(), offerLast()
 * pollFirst(), pollLast()
 * getFirst(), getLast()
+* removeFirstOccurrence(), removeLastOccurrence()
 * pop()
 * push()
 

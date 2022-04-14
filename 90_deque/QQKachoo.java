@@ -62,7 +62,4 @@ public class QQKachoo<T> implements Deque<T> {
     return _list.descendingIterator();
   }
 
-  public boolean removeLastOccurrence(T x){
-    return _list.removeLastOccurrence(x);
-  }
 }
