@@ -2,8 +2,6 @@ Team A Random Word (Nina Jiang, Orion Roven, Ivina Wang )
 
 APCS pd7
 
-<<<<<<< Updated upstream
-=======
 <<<<<<< HEAD
 HW91-- Deque the Halls
 
@@ -13,7 +11,6 @@ time spent: 1.0 hrs
 
 ### IMPLEMENTED:
 =======
->>>>>>> Stashed changes
 HW90-- Swabbing the Deque
 
 2022-04-12w
@@ -22,10 +19,7 @@ time spent: 1.0 hrs
 
 
 ### PLAN:
-<<<<<<< Updated upstream
-=======
 >>>>>>> 1f7e3c1392c9ba5cfca4eccb832301655af2f30c
->>>>>>> Stashed changes
 * addFirst(), addLast()
 * peekFirst(), peekLast()
 * removeFirst(), removeLast()
