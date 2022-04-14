@@ -2,24 +2,14 @@ Team A Random Word (Nina Jiang, Orion Roven, Ivina Wang )
 
 APCS pd7
 
-<<<<<<< HEAD
 HW91-- Deque the Halls
 
 2022-04-14r
 
 time spent: 1.0 hrs
 
-### IMPLEMENTED:
-=======
-HW90-- Swabbing the Deque
-
-2022-04-12w
-
-time spent: 1.0 hrs
-
 
 ### PLAN:
->>>>>>> 1f7e3c1392c9ba5cfca4eccb832301655af2f30c
 * addFirst(), addLast()
 * peekFirst(), peekLast()
 * removeFirst(), removeLast()
