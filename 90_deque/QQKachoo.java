@@ -60,6 +60,6 @@ public class QQKachoo<T> implements Deque<T> {
 
   public Iterator<T> descendingIterator(){
     return _list.descendingIterator();
-  }
+  } 
 
 }

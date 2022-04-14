@@ -45,5 +45,6 @@ public class MRKPirateBae {
     System.out.println("Is jackSparrow empty after removing 2 elements?: + " + jackSparrow.isEmpty()); //false
     jackSparrow.removeLast();
     System.out.println("Is jackSparrow empty after removing one more element?: " + jackSparrow.isEmpty()); //true
+    
   }
 }

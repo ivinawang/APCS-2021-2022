@@ -7,7 +7,7 @@ time spent: 1.0 hrs
 DISCO:
 * Many of the methods for Deque have the same names as the methods in LinkedList
 * The methods for LinkedList are passed through Deque
-* You have to import the Iterator util in the interface or else you will get an error:cannot find symbol errror
+* You have to import java.util.Iterator in the interface or else you will get an error:cannot find symbol errror
 
 QCC:
 * When do we need to use Deque? Why would you use it over normal Queue?
