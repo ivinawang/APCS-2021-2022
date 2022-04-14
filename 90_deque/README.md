@@ -33,4 +33,4 @@ We imported LinkedList and use its methods to implement adding and removing for 
 Similar to what we did in the homework last night for ALQueue and LLQueue.
 We decided not to implement the methods in the OTHER METHODS section because many of them were repetetive. For example getFirst() is only different from peekFirst() in that it returns null if the LinkedList is empty.
 However, we are not sure how to implement pop() and push() because they are used for stacks and we are using a linked list.
-We added additional methods like the iterator() and contains().
+We added additional methods like the iterator() and contains(). 
