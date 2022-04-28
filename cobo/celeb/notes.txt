@@ -5,9 +5,10 @@ L09: Celebrity!
 time spent: 3.0 hrs
 
 DISCO:
-* GUi is very hard to implement
-* collegeboard smells
+* GUI is very hard to implement
+* There are three types of Java Swing containers: Panel, Frame, and Dialog. In this lab, Frame and Panel were given to us. 
 
+ 
 QCC:
 * We could not get the GUI to work
 * We tried using the terminal route, but had trouble printing the celeb clue
@@ -30,5 +31,3 @@ Activity 1
     if the guess is correct, you add a point to the score and remove the celebrity from the hat,
     if not, guess again
     do this until there are no more celebrities left in the hat
-    6. -
-    7. -

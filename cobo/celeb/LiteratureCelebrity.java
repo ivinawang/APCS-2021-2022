@@ -1,3 +1,11 @@
+/*
+uwu kittens: Anthony Sun, Ivina Wang, Jaylen Zeng
+APCS pd 7
+L09: Celebrity!
+2022-04-26
+time spent: 3.0 hrs
+*/
+
 import java.util.ArrayList;
 
 /**
@@ -24,7 +32,6 @@ public class LiteratureCelebrity extends Celebrity {
     public LiteratureCelebrity(String answer, String clues) {
         super(answer, clues);
         processClues();
-        System.out.println("reached");
     }
 
     /**

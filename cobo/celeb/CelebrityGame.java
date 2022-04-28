@@ -1,3 +1,11 @@
+/*
+uwu kittens: Anthony Sun, Ivina Wang, Jaylen Zeng
+APCS pd 7
+L09: Celebrity!
+2022-04-26
+time spent: 3.0 hrs
+*/
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -54,12 +62,7 @@ public class CelebrityGame
 	 */
 	public boolean processGuess(String guess)
 	{
-		String hi = guess.toLowerCase().trim();
-		if (sendAnswer().toLowerCase().trim().equals(hi)){
-			celebGameList.remove(0);
-			return true;
-		}
-		return false;
+		return sendAnswer().toLowerCase().trim().equals( guess.toLowerCase().trim() );
 	}
 
 	/**
@@ -73,25 +76,31 @@ public class CelebrityGame
 			pollCelebrity();
 		}
 		while (getCelebrityGameSize() != 0) {
+			clear();
 			playRound();
 		}
 	}
 
 	public void playRound() {
-		Celebrity celeb = celebGameList.remove(0);
+		gameCelebrity = celebGameList.remove(0);
 		String answer;
 		do {
-			System.out.println("Clue: "+celeb.getClue());
+			System.out.println("Clue: "+gameCelebrity.getClue());
 			answer = input("Guess (type \"give up\" to move on): ");
 			if (answer.equals("give up")) break;
 		}
-		while (!answer.equals(celeb.getAnswer()));
-		System.out.println("Moving on.");
+		while (!processGuess(answer));
+		System.out.println("You've finished! Congratulations.");
 	}
 
 	public String input(String input) {
 		System.out.print(input);
 		return in.nextLine();
+	}
+
+	public void clear() {
+		System.out.print("\033[H\033[2J");  
+    	System.out.flush(); 
 	}
 
 	public void pollCelebrity() {
@@ -103,15 +112,12 @@ public class CelebrityGame
 		}
 		while (!validateCelebrity(name));
 
-		System.out.println();
 
 		do {
 			clue = input("Clue: ");
-			System.out.println();
 			type = input("Type: ");
 		}
 		while (!validateClue(clue, type));
-		System.out.println();
 		addCelebrity(name, clue, type);
 		
 	}
@@ -130,13 +136,13 @@ public class CelebrityGame
 	{
 		Celebrity temp = new Celebrity("","");
 		
-		if (type == "Celebrity") {
+		if (type.equals("Celebrity")) {
 			temp = new Celebrity(name, guess);
 		}
-		if (type == "LiteratureCelebrity") {
+		if (type.equals("LiteratureCelebrity")) {
 			temp = new LiteratureCelebrity(name, guess);
 		}
-		if (type == "GamingCelebrity") {
+		if (type.equals("GamingCelebrity")) {
 			temp = new GamingCelebrity(name, guess);
 		}
 		
